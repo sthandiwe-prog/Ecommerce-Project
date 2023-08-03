@@ -48,9 +48,22 @@ p {
   margin: 40px 0;
 }
 
-/* body {
+.button {
+  font-size: 15;
+  color: white;
+  border: 1px solid white;
+  padding: 15px;
+  margin-top: 5px;
+  background: transparent;
+  width: 170px;
+}
+.white-color {
+  color: white;
+}
+
+body {
   width: 100%;
-} */
+}
 
 /* Navbar */
 
@@ -238,9 +251,162 @@ p {
   position: absolute;
   bottom: 19px;
   left: 210px;
-  color: green;
+  color: rgba(68, 170, 68, 0.747);
   font-size: 16px;
   padding: 10px;
   background: #e3e6f3;
   border-radius: 50%;
 }
+
+.products .price-cart .fa-cart-shopping:hover {
+  color: green;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 50px 0;
+  padding: 30px 40px;
+  background-image: url(img/banner/b2.jpg);
+  color: white;
+}
+
+.banner h2 {
+  color: white;
+}
+
+.banner span {
+  color: red;
+}
+
+.banner button {
+  color: black;
+  font-size: 15px 30px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  transition: all 300ms ease-in-out;
+}
+
+.banner button:hover {
+  color: white;
+  background: #088178;
+  cursor: pointer;
+}
+
+/* New Banner */
+
+.new-arrivals .new-arrivals-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.new-arrivals .new-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.new-arrivals .products-container {
+  margin: 20px 10px;
+}
+
+/* Small banner */
+
+.banner2 {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.banner-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url(img/banner/b17.jpg);
+  padding: 40px 50px;
+  width: 600px;
+  height: auto;
+}
+
+.banner-box2 {
+  background-image: url(img/banner/b10.jpg);
+}
+
+.banner2 .banner-box:hover button {
+  background: #088178;
+  border: 1px solid #088178;
+  transition: all 300ms ease-in;
+}
+
+.banner2 .text-banner {
+  color: rgba(255, 115, 0, 0.945);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url(img/banner/b7.jpg);
+  padding: 70px 20px;
+  width: 393px;
+  height: auto;
+  background-size: cover;
+  background-position: top 10% left 0;
+}
+
+.banner2 .text-banner2 {
+  background-image: url(img/banner/b4.jpg);
+}
+
+.banner2 .text-banner3 {
+  background-image: url(img/banner/b18.jpg);
+}
+
+/* Newsletter */
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background-image: url(img/banner/b2.jpg);
+  margin-top: 60px;
+  align-items: center;
+}
+
+.newsletter .left-content {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter span {
+  color: rgba(255, 166, 0, 0.623);
+}
+
+.newsletter .right-content form {
+  display: flex;
+}
+.newsletter .right-content form input {
+  padding: 15px 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 15px;
+}
+
+.newsletter .right-content form button {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 20px;
+  background: #088178;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Footer */

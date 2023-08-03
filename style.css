@@ -112,10 +112,21 @@ body {
   left: 2px;
 }
 
+.header .bag {
+  display: none;
+}
+.header .bars {
+  display: none;
+}
+
+.header .close-button {
+  display: none;
+}
+
 /* Hero */
 
 .hero {
-  padding: 150px 90px;
+  padding: 145px 90px;
   background: #e3e6f3;
 }
 
@@ -142,10 +153,10 @@ body {
 
 .hero {
   background-image: url("img/hero4.png");
-  height: 90%;
+  height: 90vh;
   width: 100%;
   background-size: cover;
-  background-position: top 20% right 50px;
+  background-position: top 20% right 50%;
 }
 
 /* Features */
@@ -439,4 +450,190 @@ body {
 .footer .installation span img {
   border: 1px solid #088178;
   border-radius: 5px;
+}
+
+@media (max-width: 950px) {
+  .header nav {
+    padding: 20px 30px;
+  }
+  .header .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    padding: 80px 20px;
+    background: #e3e6f3;
+    box-shadow: 0 40px 35px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    height: 100%;
+    transition: 300ms;
+    z-index: 999;
+  }
+
+  .header .bars {
+    display: flex;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    font-size: 26px;
+  }
+
+  .header .bag {
+    display: flex;
+    position: absolute;
+    top: 31px;
+    right: 140px;
+    font-size: 20px;
+  }
+
+  .header .close-button {
+    display: flex;
+    position: absolute;
+    top: 31px;
+    right: 260px;
+    font-size: 20px;
+    z-index: 999;
+  }
+
+  .hero {
+    height: 70vh;
+    background-position: top 30% right 30%;
+  }
+
+  .hero {
+    padding: 130px 30px;
+  }
+
+  .hero .headings {
+    gap: 7px;
+  }
+  .hero .headings h2 {
+    font-size: 35px;
+  }
+
+  .hero .headings h1 {
+    font-size: 45px;
+  }
+
+  .hero .headings p {
+    margin: 0;
+  }
+
+  .hero .headings button {
+    width: 32%;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  .banner h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .banner button {
+    font-size: 10px;
+  }
+
+  .banner2 .text-banner {
+    width: 600px;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter .right-content form input {
+    padding: 10px 40px;
+
+    font-size: 10px;
+  }
+
+  .newsletter .right-content form button {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+
+  .footer {
+    margin: 50px 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .footer .installation img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header .bars {
+    right: 30px;
+  }
+
+  .header nav img {
+    width: 120px;
+  }
+  .header .bag {
+    right: 100px;
+    font-size: 17px;
+  }
+
+  .hero {
+    height: 70vh;
+    background-position: top 30% right 45%;
+  }
+
+  .hero {
+    padding: 90px 30px;
+  }
+
+  .hero .headings {
+    gap: 2px;
+  }
+  .hero .headings h2 {
+    font-size: 25px;
+  }
+
+  .hero .headings h1 {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .hero .headings p {
+    margin: 12px 0;
+    font-size: 10px;
+  }
+
+  .hero .headings button {
+    width: 60%;
+    background-position: top 20% right 30%;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  .banner h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .banner button {
+    font-size: 9px;
+    padding: 10px;
+  }
+
+  .footer {
+    margin: 50px 30px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer .about {
+    margin-right: 30px;
+  }
+
+  .footer .installation {
+    margin-left: 18px;
+  }
 }

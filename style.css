@@ -871,3 +871,91 @@ body {
     display: none;
   }
 }
+
+/* About section */
+
+.about-header {
+  height: 40vh;
+  width: 100%;
+  padding: 20px;
+  background-image: url(img/about/banner.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-header .about-heading {
+  color: white;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding: 100px 150px;
+}
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.about-content .about-left-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+.about-content .about-left-content img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.about-content .about-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.about-content .about-right-content span {
+  text-decoration: dotted underline;
+}
+
+.about-ad {
+  text-align: center;
+}
+
+.about-ad span {
+  color: blueviolet;
+  text-decoration: underline;
+}
+.about-ad .video video {
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 950px) {
+  .about-us {
+    padding: 80px 30px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content h2,
+  h1 {
+    font-size: 35px;
+  }
+  .about-ad .video video {
+    width: 90%;
+    padding: 0;
+  }
+}
